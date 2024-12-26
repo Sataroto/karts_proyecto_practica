@@ -1,0 +1,42 @@
+{% extends "sitio/base.html" %}
+
+{% load static %}
+
+{% block content%}
+
+    {% for post in posts %}
+    <section class="page-section clearfix">
+        <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded " src="{{post.imagen.url}}" alt="" style="width: 600px; height: 400px;object-fit: contain;">
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+            <h6 class="section-heading mb-6" >
+                <span class="section-heading-lower">{{post.titulo}}</span>
+            </h6>
+            <p class="mb-3" style="#C0C0C0">
+                {{post.contenido}}
+            </p>
+            <div style="text-align: left; font-size: 0.8em">
+                Autor: {{post.autor}}
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    {% endfor %}
+
+        <section>
+            <div style="width: 75%; margin: auto; text-align: center; color: white;" >
+                Categorias:&nbsp;&nbsp;&nbsp;
+                {% for cat in categorias  %}
+                    {% if cat.nombre == categoria.nombre  %}
+                        {{cat.nombre}} &nbsp;&nbsp;&nbsp;
+                    {% else %}
+                        <a href="{% url 'categoria' cat.id  % }" class="categoria-link" >{{cat.nombre}}</a> &nbsp;&nbsp;&nbsp;
+                    {% endif %}
+
+                {% endfor %}
+            </div>
+        </section>
+
+{% endblock %}

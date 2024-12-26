@@ -1,0 +1,12 @@
+{% extends "sitio/base.html" %}
+
+{% load static %}
+
+{% block content%}
+<p>
+    <form method="post"></form>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit">Enviar</button>
+</p>
+{% endblock %}
