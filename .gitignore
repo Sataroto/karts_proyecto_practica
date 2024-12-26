@@ -1,1 +1,27 @@
-/__pycache__
+# Ignorar directorios de caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignorar entornos virtuales
+venv/
+ENV/
+env/
+.venv/
+.env/
+
+# Ignorar archivos de configuración de IDE
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar archivos de compilación
+*.o
+*.a
+*.out
+*.pyc
+*.pyo
