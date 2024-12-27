@@ -25,3 +25,4 @@ env/
 *.out
 *.pyc
 *.pyo
+go_kart_zone/Apps/contacto/__pycache__/models.cpython-312.pyc
