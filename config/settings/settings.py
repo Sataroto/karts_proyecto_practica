@@ -10,7 +10,16 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
+import environ
 from pathlib import Path
+
+
+env = environ.Env()
+environ.Env.read_env()
+
+USER_HOST = env("EMAIL_HOST_USER")
+USER_PASSWORD = env("EMAIL_PASSWORD")
+print ("{} , {}".format(USER_HOST, USER_PASSWORD))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -134,3 +143,12 @@ MEDIA_ROOT = BASE_DIR / 'go_kart_zone/media'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#configuracion de email
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST_USER = USER_HOST
+EMAIL_HOST_PASSWORD = USER_PASSWORD

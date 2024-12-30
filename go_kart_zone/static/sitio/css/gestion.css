@@ -287,3 +287,13 @@ ul.errorlist{
   color: white;
   text-decoration: underline;
 }
+
+.formulario-contacto{
+  background-color: #E83530;
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 1px 0x;
+
+  
+}
