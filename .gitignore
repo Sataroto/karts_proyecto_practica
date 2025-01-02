@@ -16,7 +16,7 @@ env/
 *.sublime-workspace
 *.sublime-project
 
-# Ignorar archivos de logs
+# Ignorar archivos de logs%
 *.log
 
 # Ignorar archivos de compilación
@@ -29,3 +29,8 @@ go_kart_zone/Apps/contacto/__pycache__/models.cpython-312.pyc
 config/settings/.env
 config/settings/__pycache__/settings.cpython-312.pyc
 config/settings/__pycache__/settings.cpython-312.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+config/settings/__pycache__/__init__.cpython-312.pyc
