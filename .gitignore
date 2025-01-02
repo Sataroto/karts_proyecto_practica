@@ -27,3 +27,5 @@ env/
 *.pyo
 go_kart_zone/Apps/contacto/__pycache__/models.cpython-312.pyc
 config/settings/.env
+config/settings/__pycache__/settings.cpython-312.pyc
+config/settings/__pycache__/settings.cpython-312.pyc
