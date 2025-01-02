@@ -27,6 +27,7 @@ urlpatterns = [
     path('servicios/', include('go_kart_zone.Apps.Servicios.urls')),
     path('blog/', include('go_kart_zone.Apps.blog.urls')),
     path('contacto/', include('go_kart_zone.Apps.contacto.urls')),
+    path('tienda/', include('go_kart_zone.Apps.tienda.urls'))
 ]
 
 if settings.DEBUG: 

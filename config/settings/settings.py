@@ -19,7 +19,6 @@ environ.Env.read_env()
 
 USER_HOST = env("EMAIL_HOST_USER")
 USER_PASSWORD = env("EMAIL_PASSWORD")
-print ("{} , {}".format(USER_HOST, USER_PASSWORD))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -50,6 +49,7 @@ INSTALLED_APPS = [
     'go_kart_zone.Apps.Servicios',
     'go_kart_zone.Apps.blog',
     'go_kart_zone.Apps.contacto',
+    'go_kart_zone.Apps.tienda',
 ]
 
 MIDDLEWARE = [

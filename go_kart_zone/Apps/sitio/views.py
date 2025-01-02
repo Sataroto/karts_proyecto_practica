@@ -8,6 +8,3 @@ def inicio(request):
      
      return render(request, "sitio/inicio.html")
 
-def tienda(request):
-     
-     return render(request, "sitio/tienda.html")
